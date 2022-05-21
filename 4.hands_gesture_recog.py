@@ -3,19 +3,6 @@ import mediapipe as mp
 import pandas as pd  
 import os
 import numpy as np 
-import requests as reqs 
-import webbrowser
-
-import paho.mqtt.client as mqtt
-host = "broker.mqttdashboard.com"
-port = 8000
- 
-linkNGROK = 'https://fc83-124-120-18-47.ap.ngrok.io/'
-linkLocal = 'http://127.0.0.1:8000/'
-
-client = mqtt.Client()
-client.connect(host)
-
 
 def image_processed(hand_img):
 
