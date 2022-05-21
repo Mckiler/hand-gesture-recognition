@@ -18,7 +18,7 @@ def image_processed(hand_img):
 
     # Initialize Hands
     hands = mp_hands.Hands(static_image_mode=True,
-    max_num_hands=1, min_detection_confidence=0.7)
+    max_num_hands=2, min_detection_confidence=0.7)
 
     # Results
     output = hands.process(img_flip)
